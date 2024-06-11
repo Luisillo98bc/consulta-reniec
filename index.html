@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Buscar DNI</h1>
+    <div class="form-group">
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" placeholder="Ingrese DNI" type="number">
+    </div>
+    <button id="boton">Buscar</button>
+
+    <h2>Resultados</h2>
+    <div class="form-group">
+        <label for="resultado-dni">DNI:</label>
+        <input type="text" id="resultado-dni" readonly>
+    </div>
+    <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" readonly>
+    </div>
+    <div class="form-group">
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" readonly>
+    </div>
+    <div class="form-group">
+        <label for="cui">CUI:</label>
+        <input type="text" id="cui" readonly>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
